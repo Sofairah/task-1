@@ -8,68 +8,54 @@
             font-family: sans-serif;
             text-align: center;
             margin: 0;
+            background: #add8e6;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background: #6495ed;
+            padding: 10px;
+        }
+        .navbar button {
+            background: #4682b4;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
         }
         .content {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10px;
+            padding: 20px;
         }
-        .content-item {
+        .row {
             display: flex;
-            align-items: center;
-            width: 90%;
+            width: 80%;
             margin: 10px 0;
         }
         .image-space {
-            width: 100px;
-            height: 100px;
-            background: lightgray;
+            flex: 1;
+            height: 150px;
+            background: #003366;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #5f9ea0;
             margin-right: 10px;
-            font-size: 14px;
         }
         .text-space {
+            flex: 2;
+            background: #4682b4;
+            padding: 20px;
+            color: #191970;
+        }
+        .large {
+            flex: 2;
+            height: 200px;
+        }
+        .small {
             flex: 1;
-            background: #f0f0f0;
-            padding: 10px;
-            text-align: left;
-        }
-        .navbar {
-            background: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 8px;
-        }
-        .navbar button {
-            background: #555;
-            color: white;
-            border: none;
-            padding: 10px;
-            margin: 4px;
-            width: 95%;
-            font-size: 14px;
-        }
-          @media (min-width: 600px) {
-            .content {
-                width: 80%;
-                margin: auto;
-            }
- .content-item {
-                width: 70%;
-            }
-            .image-space {
-                width: 150px;
-                height: 150px;
-                font-size: 16px;
-            }
-            .navbar button {
-                padding: 12px;
-                font-size: 16px;
-            }
         }
     </style>
 </head>
@@ -81,17 +67,15 @@
         <button>Contact</button>
     </div>
     <div class="content">
-        <div class="content-item">
-            <div class="image-space">Image 1</div>
-            <div class="text-space">Text for image 1</div>
+        <div class="row">
+            <div class="image-space large">Image</div>
+            <div class="text-space large">Text</div>
         </div>
-        <div class="content-item">
-            <div class="image-space">Image 2</div>
-            <div class="text-space">Text for image 2</div>
-        </div>
-        <div class="content-item">
-            <div class="image-space">Image 3</div>
-            <div class="text-space">Text for image 3</div>
+        <div class="row">
+            <div class="image-space small">Image</div>
+            <div class="text-space small">Text</div>
+            <div class="image-space small">Image</div>
+            <div class="text-space small">Text</div>
         </div>
     </div>
 </body>

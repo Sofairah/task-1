@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cfe8f5;
+    margin: 0;
+}
+
+.phone-container {
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.header {
+    grid-column: span 2;
+    height: 50px;
+    background-color: lightblue;
+}
+
+.banner {
+    grid-column: span 2;
+    height: 80px;
+    background-color: #4292d1;
+}
+
+.section-1, .section-2 {
+    grid-column: span 2;
+    height: 80px;
+    background-color: #004b85;
+}
+
+.box {
+    height: 80px;
+}
+
+.box:nth-child(5), .box:nth-child(6) {
+    background-color: #004b85;
+}
+
+.box:nth-child(7), .box:nth-child(8) {
+    background-color: #4292d1;
+}
